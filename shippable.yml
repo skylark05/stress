@@ -1,5 +1,9 @@
 language: none
 
+env:
+  global:
+    - LOGS_FILE_READ_WAIT_TIME_IN_S=2
+
 build:
   ci:
     - sudo apt install pi
