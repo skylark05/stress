@@ -1,10 +1,8 @@
 language: none
 
-env:
-  global:
-    - LOGS_FILE_READ_WAIT_TIME_IN_S=2
-
 build:
+  pre_ci_boot:
+    options: "-e LOGS_FILE_READ_WAIT_TIME_IN_S=2"
   ci:
     - sudo apt install pi
     - time pi 20000000 > /tmp/pi.txt
