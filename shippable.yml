@@ -3,4 +3,4 @@ language: none
 build:
   ci:
     - sudo apt install pi
-    - time pi 10000000 > /tmp/pi.txt
+    - time pi 20000000 > /tmp/pi.txt
