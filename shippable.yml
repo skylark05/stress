@@ -12,7 +12,7 @@ jobs:
   - name: cpuStress
     type: runSh
     steps:
-      - TASK
+      - TASK:
           script:
             - sudo apt install pi
             - time pi 20000000 > /tmp/pi.txt
