@@ -7,3 +7,13 @@ build:
     - sudo apt install pi
     - time pi 20000000 > /tmp/pi.txt
     - sleep 60
+
+jobs:
+  - name: cpuStress
+    type: runSh
+    steps:
+      - TASK
+          script:
+            - sudo apt install pi
+            - time pi 20000000 > /tmp/pi.txt
+            - sleep 60
